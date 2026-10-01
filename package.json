@@ -1,0 +1,37 @@
+{
+	"name": "pi-skill-inline-autocomplete",
+	"version": "0.1.0",
+	"type": "module",
+	"description": "Inline /skill autocomplete for the pi editor — type / + letters anywhere in the prompt (not just at the start of line 0) to fuzzy-find skills; completion inserts /skill:name.",
+	"keywords": [
+		"pi-package",
+		"pi",
+		"coding-agent",
+		"autocomplete",
+		"skills",
+		"tui"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "zereight",
+		"url": "https://github.com/zereight"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zereight/pi-skill-inline-autocomplete.git"
+	},
+	"files": [
+		"extensions",
+		"README.md",
+		"LICENSE"
+	],
+	"pi": {
+		"extensions": [
+			"./extensions/skill-inline-autocomplete.ts"
+		]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*"
+	}
+}
